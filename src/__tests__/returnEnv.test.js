@@ -1,7 +1,9 @@
 const returnEnv = require("../returnEnv");
 
 test("set and confirm process.env.TEST", () => {
-  const value = "TEST";
-  process.env.TEST = value;
-  expect(returnEnv()).toBe(value);
+  process.env.TEST = "TEST1";
+  expect(returnEnv()).toBe(process.env.TEST);
+
+  process.env.TEST = "TEST2";
+  expect(returnEnv()).toBe(process.env.TEST);
 });
