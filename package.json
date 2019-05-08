@@ -1,7 +1,7 @@
 {
-  "name": "jest-self-signed-certificate",
+  "name": "jest-process-env",
   "version": "1.0.0",
-  "description": "Testing self signed certificate error with jest",
+  "description": "Repo for testing process.env with jest",
   "main": "sum.js",
   "scripts": {
     "test": "jest"
